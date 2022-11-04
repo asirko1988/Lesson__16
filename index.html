@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Lesson 16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <div class="page__container">
+            <div class="page__image"><img src="img/illustration.svg" alt="illustration"></div>
+            <div class="page__body body-page">
+               <h3 class="body-page__subtitle">Any questions?</h3>
+               <h1 class="body-page__title">Drop us a line</h1>
+               <form class="body-page__items" action="#" enctype="multipart/form-data" method="get">
+                  <div class="body-page__item">
+                     <div class="item__line">
+                        <label class="item__label">First Name*</label>
+                        <input type="text" class="item__input" required autocomplete="off"
+                           placeholder="Your first name">
+                     </div>
+                     <div class="item__line">
+                        <label class="item__label">Last Name*</label>
+                        <input type="text" class="item__input" required autocomplete="off" placeholder="Your last name">
+                     </div>
+                     <div class="item__line">
+                        <label class="item__label">Email*</label>
+                        <input type="email" class="item__input" required autocomplete="off"
+                           placeholder="Your working email">
+                     </div>
+                     <div class="item__line">
+                        <label class="item__label">Phone</label>
+                        <input type="tel" class="item__input" autocomplete="off" placeholder="Your phone number">
+                     </div>
+                  </div>
+                  <div class="item__line item__line--space">
+                     <label class="item__label">Message*</label>
+                     <textarea name="form[]" class="item__input item__input--message" placeholder="Your message"
+                        required></textarea>
+                  </div>
+                  <div class="item__submit submit-item">
+                     <input id="check" type="checkbox" class="submit-item__input" required>
+                     <label for="check" class="submit-item__label"><span class="submit-item__text">I agree to
+                           receive communications from
+                           Createx
+                           Online School</span></label>
+                     <button type="submit" class="submit-item__button">Send message</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="homework">
+            <div class="homework__item">
+               <label class="item-sex">Your sex:</label>
+               <p><input type="radio" name="sex" value="man">Man</p>
+               <p><input type="radio" name="sex" value="woman">Woman</p>
+            </div>
+            <div class="homework__item">
+               <label class="homework__vehicle">Do you have a vehicle?:</label>
+               <p><input type="checkbox" name="car" value="yes">Car</p>
+               <p><input type="checkbox" name="car2" value="yes">Bicycle</p>
+               <p><input type="checkbox" name="car3" value="yes">Motorcycle</p>
+               <p><input type="checkbox" name="car4" value="yes">No vehicle</p>
+            </div>
+            <div class="homework__item">
+               <label class="item-photo">Link your photo</label>
+               <p><input type="file" name="photo"></p>
+            </div>
+            <div class="homework__item">
+               <label class="item-colour">What is your favourite colour?:</label>
+               <select name="colour">
+                  <option value="red">red</option>
+                  <option value="blue">blue</option>
+                  <option value="green">green</option>
+               </select>
+            </div>
+            <div class="homework__item">
+               <input type="date">
+            </div>
+            <div class="homework__item">
+               <input type="range">
+            </div>
+         </div>
+      </main>
+      <footer></footer>
+   </div>
+</body>
+
+</html>
